@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Saira', sans-serif;
+  
+}
+.logo{
+  background-color: #F78800;
+  padding: 0% 40% 0%;
+  
+  
+}
+
+.nav {
+  height: 63px;
+  width: 100%;
+  background-color: #e27802;
+  position: relative;
+  
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float:inline-start;
+  font-size: 25px;
+}
+.nav>.nav-links>.right{
+  float: right;
+  display: inline;
+  font-size: 25px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 11px 10px 13px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.material-icons{
+  margin-top: 7px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5%;
+  grid-auto-rows: minmax(5px, auto);
+  width: 500px;
+  padding: 0% 20% 5%;
+  
+  
+  
+}
+.bottom{
+  background-color: #6a492b;
+  height: 500px;
+  font-size: 15px;
+  
+}
+.Liste1{
+  padding-top: 3%;
+  padding-left: 15%;
+  color: white;
+  line-height: 20px;
+  float: left;
+  
+  width: 25%;
+}
+.Liste2{
+  padding-top: 3%;
+  padding-left: 11%;
+  color: white;
+  line-height: 20px;
+  float: left;
+  
+  width: 25%;
+}
+.Liste3{
+  padding-top: 3%;
+  padding-left: 8%;
+  color: white;
+  line-height: 20px;
+  float: left;
+  
+  width: 25%;
+}
+.Liste4{
+  padding-top: 3%;
+  padding-right: 15%;
+  color: white;
+  line-height: 20px;
+  float: left;
+  
+  width: 25%;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #372516;
+}
